@@ -1,0 +1,273 @@
+
+
+/* About Me */
+.about-me-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px;
+    padding: 40px 40px;
+   
+}
+
+.about-me{
+   font-size: 40px;
+    
+}
+
+.about-me p{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.my-experiences{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    font-size: 40px;  
+}
+
+.ratings{
+    display: flex;
+    gap: 25px;
+    /* justify-content: space-between; */
+}
+
+.my-experiences h3{
+    letter-spacing: 20px;
+}
+
+.my-experiences p{
+    font-size: 20px;
+    padding-left: 65%;
+}
+
+
+
+/* Experience */
+
+.experience-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px ;
+    padding-bottom: 100px;
+
+
+    background-image: linear-gradient(#1d4350, #a43931);
+    background-repeat: no-repeat;
+    background-position: cover;
+    color: var(--primary-color);
+}
+
+.experience-summary{
+    width: 50%;
+    padding-top: 40px;
+    padding-left: 60px;
+}
+
+.experience-summary p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+}
+
+.experience-summary h2{
+    font-size: 40px;
+    padding-left: 60px;
+}
+
+.experience-cards{
+    padding-right: 100px;
+}
+
+.card h4{
+    font-size: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.card-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+/* Awards */
+.awards{
+    text-align: center;
+    margin: 0 80px;
+    padding: 40px 40px;
+}
+
+.award-cards{
+    text-align: left;
+}
+
+.award-card{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 60px;
+    padding: 50px 100px;
+    background-color: black;
+
+    border-radius: 5px;
+}
+
+/* My Portfolio */
+
+.my-portfolio{
+    margin: 0 80px;
+    padding: 40px 40px;
+    text-align: center;
+}
+
+.buttons{
+    /* display: flex; */
+    text-align: center;
+    
+}
+
+.buttons a { 
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 10px;
+    font-size: 24px;
+    margin-top: 40px;
+    text-decoration: none;
+
+}
+
+.active, .btn:hover {
+    background-color: var(--secondary-color);
+   
+  }
+
+
+/* Cases */
+
+.case-studies{
+    margin: 0 80px;
+    padding: 40px 40px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+
+    text-align: justify;
+}
+
+.case-imgages{
+    background-color:#000;
+}
+
+.case-details p{
+    font-size: 18px;
+    color: gainsboro;
+}
+
+.input-box{
+    background-color: var(--scondary-bg-color);
+    border-radius: 10px;
+    margin: 20px 200px;
+    padding: 100px 100px;
+}
+
+.inputs{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: auto auto;
+}
+
+.input{
+    border-bottom: 2px solid gray;
+}
+
+.submit-button{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 576px) and (min-width: 200px){
+    .about-me-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .my-experiences h3{
+        padding-left: 35%;
+        letter-spacing: 5px;
+        font-size: 18px;
+    }
+    .my-experiences p{
+        font-size: 20px;
+        padding-left: 38%;
+        text-align: center;
+    }
+
+    .experience-container{
+        flex-direction: column;
+    }
+
+    .award-cards{
+        text-align: center;
+    }
+    
+    .award-card{
+        flex-direction: column-reverse;
+        font-size: 20px;
+        margin: 5px 15px;
+        padding: 20px 30px;
+        background-color: var(--primary-bg)
+    }
+    
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    
+    .buttons a { 
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        margin: 10px;
+        padding: 5px 10px;
+        font-size: 18px;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+
+    .active, .btn:hover {
+        background-color: var(--secondary-color);
+       
+      }
+
+    .case-studies{
+        /* margin: 0 80px; */
+        /* padding: 10px 40px; */
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        justify-content: space-evenly;
+    
+        text-align: center;
+    }
+
+    .input-box{
+        background-color: var(--scondary-bg-color);
+        border-radius: 10px;
+        margin: 20px 20px;
+        padding: 10px 10px;
+    }
+    
+    .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
